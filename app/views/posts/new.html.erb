@@ -1,0 +1,13 @@
+<h1>Post Form</h1>
+
+<%=form_tag posts_path do%>
+
+    Type in form information here: <br>
+    Title:
+    <%=text_field_tag :'post[title]'%> <br>
+    Description:
+    <%=text_area_tag :'post[description]'%>
+
+    <input type="submit"  value="Submit Post">
+<%end%>
+<%=params.inspect%>
